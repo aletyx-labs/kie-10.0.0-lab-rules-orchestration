@@ -94,10 +94,6 @@
     </dependency>
     <dependency>
       <groupId>org.kie</groupId>
-      <artifactId>kogito-addons-quarkus-jobs-management</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.kie</groupId>
       <artifactId>kie-addons-quarkus-process-svg</artifactId>
     </dependency>
     <dependency>
