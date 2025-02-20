@@ -1,1 +1,0 @@
-# kie-10.0.0-lab-rules-orchestration
