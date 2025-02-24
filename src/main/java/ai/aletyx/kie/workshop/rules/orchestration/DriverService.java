@@ -21,6 +21,6 @@ public class DriverService {
         //random expiration based on id, even number will be expired and odd number will be valid
         long days = Long.parseLong(driverId) % 2;
         Date licenseExpiration = new Date(ZonedDateTime.now().plusDays(days).toInstant().toEpochMilli());
-        return new Driver(driverId, "Alex", "FL", "Parkland", 13, 40, licenseExpiration);
+        return new Driver(driverId, "Alex", "FL", "Parkland", 0, 40, licenseExpiration);
     }
 }

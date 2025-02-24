@@ -4,10 +4,13 @@ import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
+@JsonTypeName("Driver")
 public class Driver {
 
+    @JsonProperty("Id")
     private String id;
 
     @JsonProperty("Name")

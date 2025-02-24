@@ -1,35 +1,31 @@
 package ai.aletyx.kie.workshop.rules.orchestration;
 
-import java.math.BigDecimal;
-import java.util.Date;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
+@JsonTypeName("Violation")
 public class Violation {
 
     @JsonProperty("Code")
     private String code;
 
-    @JsonProperty("Date")
-    private Date date;
-
     @JsonProperty("Type")
     private String type;
 
     @JsonProperty("Speed Limit")
-    private BigDecimal speedLimit;
+    private int speedLimit;
 
     @JsonProperty("Actual Speed")
-    private BigDecimal actualSpeed;
+    private int actualSpeed;
 
     public Violation() {
     }
 
-    public Violation(String type, BigDecimal speedLimit, BigDecimal actualSpeed) {
+    public Violation(String code, String type, int speedLimit, int actualSpeed) {
+        this.code = code;
         this.type = type;
         this.speedLimit = speedLimit;
         this.actualSpeed = actualSpeed;
-        this.date = new Date();
     }
 
     public String getCode() {
@@ -40,14 +36,6 @@ public class Violation {
         this.code = code;
     }
 
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
     public String getType() {
         return type;
     }
@@ -56,19 +44,25 @@ public class Violation {
         this.type = type;
     }
 
-    public BigDecimal getSpeedLimit() {
+    public int getSpeedLimit() {
         return speedLimit;
     }
 
-    public void setSpeedLimit(BigDecimal speedLimit) {
+    public void setSpeedLimit(int speedLimit) {
         this.speedLimit = speedLimit;
     }
 
-    public BigDecimal getActualSpeed() {
+    public int getActualSpeed() {
         return actualSpeed;
     }
 
-    public void setActualSpeed(BigDecimal actualSpeed) {
+    public void setActualSpeed(int actualSpeed) {
         this.actualSpeed = actualSpeed;
+    }
+
+    @Override
+    public String toString() {
+        return "Violation [code=" + code + ", type=" + type + ", speedLimit=" + speedLimit + ", actualSpeed="
+                + actualSpeed + "]";
     }
 }
