@@ -12,7 +12,7 @@ public class Violation {
 	private String code;
 
 	@JsonProperty("Date")
-	private OffsetDateTime date;
+	private Date date;
 
 	@JsonProperty("Type")
 	private String type;
@@ -26,7 +26,7 @@ public class Violation {
 	public Violation() {
 	}
 
-	public Violation(String code, OffsetDateTime date, String type, BigDecimal speedLimit, BigDecimal actualSpeed) {
+	public Violation(String code, Date date, String type, BigDecimal speedLimit, BigDecimal actualSpeed) {
 		this.code = code;
 		this.date = date;
 		this.type = type;
@@ -42,11 +42,11 @@ public class Violation {
 		this.code = code;
 	}
 
-	public OffsetDateTime getDate() {
+	public Date getDate() {
 		return date;
 	}
 
-	public void setDate(OffsetDateTime date) {
+	public void setDate(Date date) {
 		this.date = date;
 	}
 

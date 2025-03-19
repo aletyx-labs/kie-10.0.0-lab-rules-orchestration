@@ -26,7 +26,7 @@
       <dmn:typeRef>string</dmn:typeRef>
     </dmn:itemComponent>
     <dmn:itemComponent id="_1648EA0A-2463-4B54-A12A-D743A3E3EE7B" name="Date" isCollection="false">
-      <dmn:typeRef>date and time</dmn:typeRef>
+      <dmn:typeRef>date</dmn:typeRef>
     </dmn:itemComponent>
     <dmn:itemComponent id="_9F129EAA-4E71-4D99-B6D0-84EEC3AC43CC" name="Type" isCollection="false">
       <dmn:typeRef>string</dmn:typeRef>
@@ -74,7 +74,7 @@
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_3B6B2EC6-D764-4E75-B0B0-AB83B7CC884F">
-        <dmn:inputExpression id="_ACC33ED2-F382-4C92-923E-735717618D17" typeRef="date and time">
+        <dmn:inputExpression id="_ACC33ED2-F382-4C92-923E-735717618D17" typeRef="date">
           <dmn:text>Violation.Date</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
@@ -90,7 +90,7 @@
           <dmn:text>[10..30)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_9B6E7E74-EC35-4385-9B5D-8825AFD2A1B9">
-          <dmn:text>&lt;date and time(&quot;2025-03-08T00:00:00.000-04:00&quot;)</dmn:text>
+          <dmn:text>&lt;date (&quot;2025-03-08&quot;)</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_E49345EE-51D3-47C7-B658-3607E723FF37">
           <dmn:text>500</dmn:text>
@@ -113,7 +113,7 @@
           <dmn:text>[10..30)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_6B20588A-0434-4B1F-8206-DCBFDDF93B6C">
-          <dmn:text>&gt;= date and time(&quot;2025-03-08T00:00:00.000-04:00&quot;)</dmn:text>
+          <dmn:text>&gt;= date(&quot;2025-03-08&quot;)</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_D52F111F-9614-44F3-9E7B-76372E9FFF23">
           <dmn:text>800</dmn:text>
