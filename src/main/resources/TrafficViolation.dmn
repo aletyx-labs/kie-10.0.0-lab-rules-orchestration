@@ -90,7 +90,7 @@
           <dmn:text>[10..30)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_9B6E7E74-EC35-4385-9B5D-8825AFD2A1B9">
-          <dmn:text>&lt;date (&quot;2025-03-08&quot;)</dmn:text>
+          <dmn:text>&lt;date(&quot;2025-03-08&quot;)</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_E49345EE-51D3-47C7-B658-3607E723FF37">
           <dmn:text>500</dmn:text>
