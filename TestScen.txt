@@ -1,0 +1,755 @@
+rules-orchestration API
+ 10.0.0
+OAS 3.0
+/docs/openapi.json
+traffic
+
+
+GET
+/traffic
+traffic
+
+
+POST
+/traffic
+traffic
+
+Parameters
+Cancel
+Reset
+Name	Description
+businessKey
+string
+(query)
+businessKey
+Request body
+
+application/json
+{
+  "driverId": "12345",
+  "violation": {
+    "Code": "speed",
+    "Date": "2025-03-10",
+    "Type": "speed",
+    "Speed Limit": 100,
+    "Actual Speed": 120
+  }
+}
+Execute
+Clear
+Responses
+Curl
+
+curl -X 'POST' \
+  'http://localhost:8080/traffic' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "driverId": "12345",
+  "violation": {
+    "Code": "speed",
+    "Date": "2025-03-10",
+    "Type": "speed",
+    "Speed Limit": 100,
+    "Actual Speed": 120
+  }
+}'
+Request URL
+http://localhost:8080/traffic
+Server response
+Code	Details
+201
+Undocumented
+Response body
+Download
+{
+  "id": "4ebd65d9-20f7-4999-ad70-50719ed040bc",
+  "driverId": "12345",
+  "driver": {
+    "id": "12345",
+    "licenseExpiration": "2025-03-20T21:00:39.791-04:00",
+    "validLicense": false,
+    "Name": "Alex",
+    "State": "FL",
+    "City": "Parkland",
+    "Points": 0,
+    "Age": 40
+  },
+  "fine": {
+    "Amount": 800,
+    "Points": 5
+  },
+  "violation": {
+    "Code": "speed",
+    "Date": "2025-03-10T00:00:00.000-04:00",
+    "Type": "speed",
+    "Speed Limit": 100,
+    "Actual Speed": 120
+  },
+  "suspended": "No"
+}
+Response headers
+ access-control-allow-credentials: false
+ access-control-allow-origin: http://localhost:8080
+ content-length: 398
+ content-type: application/json
+ location: http://localhost:8080/traffic/4ebd65d9-20f7-4999-ad70-50719ed040bc
+Responses
+Code	Description	Links
+200
+OK
+
+No links
+
+GET
+/traffic/schema
+traffic
+
+
+GET
+/traffic/{id}
+traffic
+
+
+PUT
+/traffic/{id}
+traffic
+
+
+DELETE
+/traffic/{id}
+traffic
+
+
+PATCH
+/traffic/{id}
+traffic
+
+
+GET
+/traffic/{id}/tasks
+traffic
+
+traffic2
+
+
+GET
+/traffic2
+traffic2
+
+
+POST
+/traffic2
+traffic2
+
+Parameters
+Cancel
+Reset
+Name	Description
+businessKey
+string
+(query)
+businessKey
+Request body
+
+application/json
+{
+  "driverId": "12345",
+  "violation": {
+    "Code": "speed",
+    "Date": "2025-03-10",
+    "Type": "speed",
+    "Speed Limit": 100,
+    "Actual Speed": 120
+  }
+}
+Execute
+Clear
+Responses
+Curl
+
+curl -X 'POST' \
+  'http://localhost:8080/traffic2' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "driverId": "12345",
+  "violation": {
+    "Code": "speed",
+    "Date": "2025-03-10",
+    "Type": "speed",
+    "Speed Limit": 100,
+    "Actual Speed": 120
+  }
+}'
+Request URL
+http://localhost:8080/traffic2
+Server response
+Code	Details
+201
+Undocumented
+Response body
+Download
+{
+  "id": "5bc22cc7-8a6b-4fa3-8ebc-702fc0e496af",
+  "driverId": "12345",
+  "driver": {
+    "id": "12345",
+    "licenseExpiration": "2025-03-20T21:04:32.695-04:00",
+    "validLicense": false,
+    "Name": "Alex",
+    "State": "FL",
+    "City": "Parkland",
+    "Points": 0,
+    "Age": 40
+  },
+  "fine": {
+    "Amount": 800,
+    "Points": 5
+  },
+  "violation": {
+    "Code": "speed",
+    "Date": "2025-03-10",
+    "Type": "speed",
+    "Speed Limit": 100,
+    "Actual Speed": 120
+  },
+  "suspended": "No"
+}
+Response headers
+ access-control-allow-credentials: false
+ access-control-allow-origin: http://localhost:8080
+ content-length: 379
+ content-type: application/json
+ location: http://localhost:8080/traffic2/5bc22cc7-8a6b-4fa3-8ebc-702fc0e496af
+Responses
+Code	Description	Links
+200
+OK
+
+No links
+
+GET
+/traffic2/schema
+traffic2
+
+
+GET
+/traffic2/{id}
+traffic2
+
+
+PUT
+/traffic2/{id}
+traffic2
+
+
+DELETE
+/traffic2/{id}
+traffic2
+
+
+PATCH
+/traffic2/{id}
+traffic2
+
+
+GET
+/traffic2/{id}/tasks
+traffic2
+
+traffic3
+
+
+GET
+/traffic3
+traffic3
+
+
+POST
+/traffic3
+traffic3
+
+Parameters
+Cancel
+Reset
+Name	Description
+businessKey
+string
+(query)
+businessKey
+Request body
+
+application/json
+{
+  "driverId": "12345",
+  "violation": {
+    "Code": "speed",
+    "Date": "2025-03-10T00:00:00.000-04:00",
+    "Type": "speed",
+    "Speed Limit": 100,
+    "Actual Speed": 120
+  }
+}
+Execute
+Clear
+Responses
+Curl
+
+curl -X 'POST' \
+  'http://localhost:8080/traffic3' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "driverId": "12345",
+  "violation": {
+    "Code": "speed",
+    "Date": "2025-03-10T00:00:00.000-04:00",
+    "Type": "speed",
+    "Speed Limit": 100,
+    "Actual Speed": 120
+  }
+}'
+Request URL
+http://localhost:8080/traffic3
+Server response
+Code	Details
+201
+Undocumented
+Response body
+Download
+{
+  "id": "f7263d73-6c3e-4b7a-afea-f4d23c27ecd4",
+  "driverId": "12345",
+  "driver": {
+    "id": "12345",
+    "licenseExpiration": "2025-03-20T21:04:37.201-04:00",
+    "validLicense": false,
+    "Name": "Alex",
+    "State": "FL",
+    "City": "Parkland",
+    "Points": 0,
+    "Age": 40
+  },
+  "fine": {
+    "Amount": 800,
+    "Points": 5
+  },
+  "violation": {
+    "Code": "speed",
+    "Date": "2025-03-10T04:00:00Z",
+    "Type": "speed",
+    "Speed Limit": 100,
+    "Actual Speed": 120
+  },
+  "suspended": "No"
+}
+Response headers
+ access-control-allow-credentials: false
+ access-control-allow-origin: http://localhost:8080
+ content-length: 389
+ content-type: application/json
+ location: http://localhost:8080/traffic3/f7263d73-6c3e-4b7a-afea-f4d23c27ecd4
+Responses
+Code	Description	Links
+200
+OK
+
+No links
+
+GET
+/traffic3/schema
+traffic3
+
+
+GET
+/traffic3/{id}
+traffic3
+
+
+PUT
+/traffic3/{id}
+traffic3
+
+
+DELETE
+/traffic3/{id}
+traffic3
+
+
+PATCH
+/traffic3/{id}
+traffic3
+
+
+GET
+/traffic3/{id}/tasks
+traffic3
+
+Traffic _32 Violation Resource
+
+
+GET
+/Traffic Violation
+
+
+POST
+/Traffic Violation
+
+Parameters
+Cancel
+Reset
+No parameters
+
+Request body
+
+application/json
+DMN input
+
+{
+  "Violation": {
+    "Code": "speed",
+    "Date": "2025-03-10",
+    "Type": "speed",
+    "Speed Limit": 100,
+    "Actual Speed": 120
+  },
+  "Driver": {
+    "Name": "string",
+    "Age": 0,
+    "State": "string",
+    "City": "string",
+    "Points": 0,
+    "Driver Expiration": "2025-03-20"
+  }
+}
+Execute
+Clear
+Responses
+Curl
+
+curl -X 'POST' \
+  'http://localhost:8080/Traffic Violation' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "Violation": {
+    "Code": "speed",
+    "Date": "2025-03-10",
+    "Type": "speed",
+    "Speed Limit": 100,
+    "Actual Speed": 120
+  },
+  "Driver": {
+    "Name": "string",
+    "Age": 0,
+    "State": "string",
+    "City": "string",
+    "Points": 0,
+    "Driver Expiration": "2025-03-20"
+  }
+}'
+Request URL
+http://localhost:8080/Traffic Violation
+Server response
+Code	Details
+200
+Response body
+Download
+{
+  "Violation": {
+    "Type": "speed",
+    "Speed Limit": 100,
+    "Actual Speed": 120,
+    "Code": "speed",
+    "Date": "2025-03-10"
+  },
+  "Driver": {
+    "Driver Expiration": "2025-03-20",
+    "Points": 0,
+    "State": "string",
+    "City": "string",
+    "Age": 0,
+    "Name": "string"
+  },
+  "Fine": {
+    "Points": 5,
+    "Message": "The Expected: ",
+    "Amount": 800
+  },
+  "Suspended": "No"
+}
+Response headers
+ access-control-allow-credentials: false
+ access-control-allow-origin: http://localhost:8080
+ content-length: 291
+ content-type: application/json
+Responses
+Code	Description	Links
+default
+DMN output
+
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+{
+  "Fine": {
+    "Message": "string",
+    "Amount": 0,
+    "Points": 0
+  },
+  "Suspended": "string",
+  "Violation": {
+    "Code": "string",
+    "Date": "2025-03-20",
+    "Type": "parking",
+    "Speed Limit": 0,
+    "Actual Speed": 0
+  },
+  "Driver": {
+    "Name": "string",
+    "Age": 0,
+    "State": "string",
+    "City": "string",
+    "Points": 0,
+    "Driver Expiration": "2025-03-20"
+  }
+}
+No links
+
+POST
+/Traffic Violation/dmnresult
+
+Traffic _32 Violation 2 Resource
+
+
+GET
+/Traffic Violation2
+
+
+POST
+/Traffic Violation2
+
+Parameters
+Cancel
+Reset
+No parameters
+
+Request body
+
+application/json
+DMN input
+
+{
+  "Violation": {
+    "Code": "speed",
+    "Date": "2025-03-20",
+    "Type": "speed",
+    "Speed Limit": 100,
+    "Actual Speed": 120
+  },
+  "Driver": {
+    "Name": "string",
+    "Age": 0,
+    "State": "string",
+    "City": "string",
+    "Points": 0,
+    "Driver Expiration": "2025-03-20"
+  }
+}
+Execute
+Clear
+Responses
+Curl
+
+curl -X 'POST' \
+  'http://localhost:8080/Traffic Violation2' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "Violation": {
+    "Code": "speed",
+    "Date": "2025-03-20",
+    "Type": "speed",
+    "Speed Limit": 100,
+    "Actual Speed": 120
+  },
+  "Driver": {
+    "Name": "string",
+    "Age": 0,
+    "State": "string",
+    "City": "string",
+    "Points": 0,
+    "Driver Expiration": "2025-03-20"
+  }
+}'
+Request URL
+http://localhost:8080/Traffic Violation2
+Server response
+Code	Details
+200
+Response body
+Download
+{
+  "Violation": {
+    "Type": "speed",
+    "Speed Limit": 100,
+    "Actual Speed": 120,
+    "Code": "speed",
+    "Date": "2025-03-20"
+  },
+  "Driver": {
+    "Driver Expiration": "2025-03-20",
+    "Points": 0,
+    "State": "string",
+    "City": "string",
+    "Age": 0,
+    "Name": "string"
+  },
+  "Fine": {
+    "Points": 5,
+    "Message": "The Expected: ",
+    "Amount": 800
+  },
+  "Suspended": "No"
+}
+Response headers
+ access-control-allow-credentials: false
+ access-control-allow-origin: http://localhost:8080
+ content-length: 291
+ content-type: application/json
+Responses
+Code	Description	Links
+default
+DMN output
+
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+{
+  "Fine": {
+    "Message": "string",
+    "Amount": 0,
+    "Points": 0
+  },
+  "Suspended": "string",
+  "Violation": {
+    "Code": "string",
+    "Date": "2025-03-20T01:04:37.333Z",
+    "Type": "parking",
+    "Speed Limit": 0,
+    "Actual Speed": 0
+  },
+  "Driver": {
+    "Name": "string",
+    "Age": 0,
+    "State": "string",
+    "City": "string",
+    "Points": 0,
+    "Driver Expiration": "2025-03-20"
+  }
+}
+No links
+
+POST
+/Traffic Violation2/dmnresult
+
+Traffic _32 Violation 3 Resource
+
+
+GET
+/Traffic Violation3
+
+
+POST
+/Traffic Violation3
+
+Parameters
+Cancel
+Reset
+No parameters
+
+Request body
+
+application/json
+DMN input
+
+{
+  "Violation": {
+    "Code": "speed",
+    "Date": "2025-03-20T00:55:17.467Z",
+    "Type": "speed",
+    "Speed Limit": 100,
+    "Actual Speed": 120
+  },
+  "Driver": {
+    "Name": "string",
+    "Age": 0,
+    "State": "string",
+    "City": "string",
+    "Points": 0,
+    "Driver Expiration": "2025-03-20"
+  }
+}
+Execute
+Clear
+Responses
+Curl
+
+curl -X 'POST' \
+  'http://localhost:8080/Traffic Violation3' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "Violation": {
+    "Code": "speed",
+    "Date": "2025-03-20T00:55:17.467Z",
+    "Type": "speed",
+    "Speed Limit": 100,
+    "Actual Speed": 120
+  },
+  "Driver": {
+    "Name": "string",
+    "Age": 0,
+    "State": "string",
+    "City": "string",
+    "Points": 0,
+    "Driver Expiration": "2025-03-20"
+  }
+}'
+Request URL
+http://localhost:8080/Traffic Violation3
+Server response
+Code	Details
+200
+Response body
+Download
+{
+  "Violation": {
+    "Type": "speed",
+    "Speed Limit": 100,
+    "Actual Speed": 120,
+    "Code": "speed",
+    "Date": "2025-03-20T00:55:17.467Z"
+  },
+  "Driver": {
+    "Driver Expiration": "2025-03-20",
+    "Points": 0,
+    "State": "string",
+    "City": "string",
+    "Age": 0,
+    "Name": "string"
+  },
+  "Fine": {
+    "Points": 5,
+    "Message": "The Expected: ",
+    "Amount": 800
+  },
+  "Suspended": "No"
+}
